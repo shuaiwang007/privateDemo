@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12106.1" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12074.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="planInitiatorCell" id="KGk-i7-Jjw" customClass="XBPlanInitiatorTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="175"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="174.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MZB-25-Qa2">
+                        <rect key="frame" x="0.0" y="75" width="375" height="1"/>
+                        <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="904-6Z-f04"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="an_1" translatesAutoresizingMaskIntoConstraints="NO" id="BF9-k2-QTT">
+                        <rect key="frame" x="10" y="15" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="BF9-k2-QTT" secondAttribute="height" multiplier="1:1" id="ads-xc-lmi"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8xH-f8-c25">
+                        <rect key="frame" x="305" y="22" width="55" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="55" id="2tX-cf-7yP"/>
+                            <constraint firstAttribute="height" constant="30" id="nD9-6v-6o9"/>
+                        </constraints>
+                        <state key="normal" title="+关注">
+                            <color key="titleColor" red="0.99215686274509807" green="0.61176470588235299" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="focusAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="t5x-pd-nrI"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最会交小朋友拍拖依赖的计划..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FP3-eL-Fnx">
+                        <rect key="frame" x="65" y="18" width="230" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="阿雷拉妈妈" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gve-Ge-hWR">
+                        <rect key="frame" x="65" y="40" width="230" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上帝给我了一个任务，让我带一只蜗牛上帝给我了一个任务，让我带一只蜗牛上帝给我了一个任务，让我带一只蜗牛" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="moI-LV-UfF">
+                        <rect key="frame" x="15" y="91" width="345" height="68.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="FP3-eL-Fnx" firstAttribute="leading" secondItem="BF9-k2-QTT" secondAttribute="trailing" constant="10" id="10w-pQ-7UN"/>
+                    <constraint firstAttribute="trailing" secondItem="moI-LV-UfF" secondAttribute="trailing" constant="15" id="78d-0j-Xyl"/>
+                    <constraint firstAttribute="bottom" secondItem="moI-LV-UfF" secondAttribute="bottom" constant="15" id="HxO-yM-M82"/>
+                    <constraint firstItem="moI-LV-UfF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="L3a-pW-PO8"/>
+                    <constraint firstAttribute="trailing" secondItem="8xH-f8-c25" secondAttribute="trailing" constant="15" id="MVG-S4-Cpq"/>
+                    <constraint firstItem="moI-LV-UfF" firstAttribute="top" secondItem="MZB-25-Qa2" secondAttribute="bottom" constant="15" id="O2W-Bw-i7c"/>
+                    <constraint firstItem="MZB-25-Qa2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="75" id="UWe-S1-vmR"/>
+                    <constraint firstItem="BF9-k2-QTT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="YTQ-kQ-JJh"/>
+                    <constraint firstItem="8xH-f8-c25" firstAttribute="leading" secondItem="gve-Ge-hWR" secondAttribute="trailing" constant="10" id="cFP-Xf-GWL"/>
+                    <constraint firstItem="MZB-25-Qa2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="era-kV-k81"/>
+                    <constraint firstItem="gve-Ge-hWR" firstAttribute="leading" secondItem="BF9-k2-QTT" secondAttribute="trailing" constant="10" id="jZv-xd-aUk"/>
+                    <constraint firstAttribute="trailing" secondItem="MZB-25-Qa2" secondAttribute="trailing" id="kno-T5-xUy"/>
+                    <constraint firstItem="BF9-k2-QTT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="lg7-qj-f3G"/>
+                    <constraint firstItem="8xH-f8-c25" firstAttribute="centerY" secondItem="BF9-k2-QTT" secondAttribute="centerY" id="oS7-kn-CM9"/>
+                    <constraint firstItem="FP3-eL-Fnx" firstAttribute="top" secondItem="BF9-k2-QTT" secondAttribute="top" constant="3" id="pZa-nS-xaG"/>
+                    <constraint firstItem="gve-Ge-hWR" firstAttribute="bottom" secondItem="BF9-k2-QTT" secondAttribute="bottom" constant="-3" id="q2w-wa-dAq"/>
+                    <constraint firstItem="8xH-f8-c25" firstAttribute="leading" secondItem="FP3-eL-Fnx" secondAttribute="trailing" constant="10" id="wTv-br-isd"/>
+                    <constraint firstItem="MZB-25-Qa2" firstAttribute="top" secondItem="BF9-k2-QTT" secondAttribute="bottom" constant="15" id="yfe-cw-xn8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="desPlanLab" destination="FP3-eL-Fnx" id="ovd-2u-Q6l"/>
+                <outlet property="desUserLab" destination="moI-LV-UfF" id="bFe-ze-gDk"/>
+                <outlet property="focusBt" destination="8xH-f8-c25" id="zcz-gn-czq"/>
+                <outlet property="imgV" destination="BF9-k2-QTT" id="hTF-w3-GXq"/>
+                <outlet property="nameLab" destination="gve-Ge-hWR" id="dY5-dT-XGB"/>
+            </connections>
+            <point key="canvasLocation" x="71.5" y="54.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="an_1" width="251" height="371"/>
+    </resources>
+</document>

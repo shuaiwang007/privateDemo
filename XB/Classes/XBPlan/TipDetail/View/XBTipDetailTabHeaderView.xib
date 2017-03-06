@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12106.1" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12074.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="XBTipDetailTabHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="392" height="269"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="电话号码要牢记" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EFT-MR-aBw">
+                    <rect key="frame" x="135.5" y="25" width="121.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4岁~6岁" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hCY-NI-Nxo">
+                    <rect key="frame" x="169.5" y="51" width="54.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.44705882349999998" green="0.78039215689999997" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pwl-o9-rlJ">
+                    <rect key="frame" x="0.0" y="88" width="392" height="171"/>
+                    <color key="backgroundColor" red="0.36078431372549019" green="0.38823529411764707" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </webView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="pwl-o9-rlJ" secondAttribute="trailing" id="57M-GG-ZfN"/>
+                <constraint firstItem="hCY-NI-Nxo" firstAttribute="top" secondItem="EFT-MR-aBw" secondAttribute="bottom" constant="5" id="BTi-GY-4mh"/>
+                <constraint firstItem="pwl-o9-rlJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="cxq-H5-rbw"/>
+                <constraint firstItem="pwl-o9-rlJ" firstAttribute="top" secondItem="hCY-NI-Nxo" secondAttribute="bottom" constant="20" id="fmC-gr-nBy"/>
+                <constraint firstAttribute="bottom" secondItem="pwl-o9-rlJ" secondAttribute="bottom" constant="10" id="iYn-TJ-J0n"/>
+                <constraint firstItem="EFT-MR-aBw" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ia2-Pd-N61"/>
+                <constraint firstItem="EFT-MR-aBw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="25" id="zMf-Nm-lHc"/>
+                <constraint firstItem="hCY-NI-Nxo" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ztF-hd-b2m"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="ageLab" destination="hCY-NI-Nxo" id="cCP-je-DfD"/>
+                <outlet property="titleLab" destination="EFT-MR-aBw" id="sQW-Cg-QsF"/>
+                <outlet property="webView" destination="pwl-o9-rlJ" id="BoP-tu-bbE"/>
+            </connections>
+            <point key="canvasLocation" x="89" y="-85.5"/>
+        </view>
+    </objects>
+</document>

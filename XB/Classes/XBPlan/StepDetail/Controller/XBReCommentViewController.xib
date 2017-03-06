@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12106.1" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12074.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XBReCommentViewController">
+            <connections>
+                <outlet property="countLab" destination="COX-l8-8SI" id="i5e-zZ-vts"/>
+                <outlet property="placeHoldLab" destination="LpC-Tg-F36" id="qM2-lx-MZv"/>
+                <outlet property="textView" destination="geB-bs-Xqw" id="U1N-ox-Ne5"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="geB-bs-Xqw">
+                    <rect key="frame" x="15" y="64" width="345" height="150"/>
+                    <color key="backgroundColor" red="0.83921568629999999" green="0.83921568629999999" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="kcM-qV-wWD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20/140" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="COX-l8-8SI">
+                    <rect key="frame" x="305.5" y="193" width="54.5" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="ODg-Pk-IVM"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="回复：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LpC-Tg-F36">
+                    <rect key="frame" x="20" y="70" width="335" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="BYm-Cy-0yA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.44705882349999998" green="0.78039215689999997" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="COX-l8-8SI" secondAttribute="trailing" constant="15" id="4bp-1L-bVj"/>
+                <constraint firstItem="LpC-Tg-F36" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="70" id="6Hs-VO-wI6"/>
+                <constraint firstItem="geB-bs-Xqw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="77K-4d-nEz"/>
+                <constraint firstItem="LpC-Tg-F36" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="FPT-lw-NHV"/>
+                <constraint firstAttribute="trailing" secondItem="LpC-Tg-F36" secondAttribute="trailing" constant="20" id="Jt9-3y-3r9"/>
+                <constraint firstItem="COX-l8-8SI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="193" id="Xsz-EE-DXS"/>
+                <constraint firstItem="geB-bs-Xqw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="jkv-WW-TnM"/>
+                <constraint firstAttribute="trailing" secondItem="geB-bs-Xqw" secondAttribute="trailing" constant="15" id="xUf-WM-m01"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
+        </view>
+    </objects>
+</document>

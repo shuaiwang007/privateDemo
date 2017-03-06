@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12106.1" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12074.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="XBVerticalBanner">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RiO-sE-Pic">
+                    <rect key="frame" x="15" y="5" width="60" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="HQr-73-YRm"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="我加入的"/>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c6j-bc-qLS">
+                    <rect key="frame" x="15" y="34" width="345" height="2"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QsI-DS-yTX">
+                            <rect key="frame" x="0.0" y="0.0" width="0.0" height="2"/>
+                            <color key="backgroundColor" red="0.44705882349999998" green="0.78039215689999997" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" id="62I-1g-ldI"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.83921568629999999" green="0.83921568629999999" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="QsI-DS-yTX" firstAttribute="centerY" secondItem="c6j-bc-qLS" secondAttribute="centerY" id="Arw-AA-RnX"/>
+                        <constraint firstItem="QsI-DS-yTX" firstAttribute="height" secondItem="c6j-bc-qLS" secondAttribute="height" id="GZD-2b-IGU"/>
+                        <constraint firstItem="QsI-DS-yTX" firstAttribute="leading" secondItem="c6j-bc-qLS" secondAttribute="leading" id="Xyr-f2-fr4"/>
+                        <constraint firstAttribute="height" constant="2" id="vA2-T9-EcE"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="和娃一起收拾屋子竟然如此一招多用" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jeX-5k-sdo">
+                    <rect key="frame" x="82" y="10" width="278" height="14"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="c6j-bc-qLS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="2IL-Kp-SDt"/>
+                <constraint firstItem="jeX-5k-sdo" firstAttribute="leading" secondItem="RiO-sE-Pic" secondAttribute="trailing" constant="7" id="C7H-fc-fCT"/>
+                <constraint firstItem="RiO-sE-Pic" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="DNe-5t-jmy"/>
+                <constraint firstItem="c6j-bc-qLS" firstAttribute="top" secondItem="jeX-5k-sdo" secondAttribute="bottom" constant="10" id="DNp-Va-zez"/>
+                <constraint firstItem="RiO-sE-Pic" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="O9n-gk-DFc"/>
+                <constraint firstItem="c6j-bc-qLS" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottomMargin" id="Z0w-ED-rN3"/>
+                <constraint firstAttribute="trailing" secondItem="c6j-bc-qLS" secondAttribute="trailing" constant="15" id="gbx-1p-IZl"/>
+                <constraint firstItem="jeX-5k-sdo" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="hhu-o7-4p0"/>
+                <constraint firstItem="c6j-bc-qLS" firstAttribute="top" secondItem="RiO-sE-Pic" secondAttribute="bottom" constant="5" id="hwm-CI-yaM"/>
+                <constraint firstItem="c6j-bc-qLS" firstAttribute="trailing" secondItem="jeX-5k-sdo" secondAttribute="trailing" id="wfe-Gz-WuD"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="belongBt" destination="RiO-sE-Pic" id="eIH-Bq-7ea"/>
+                <outlet property="desLab" destination="jeX-5k-sdo" id="2do-ap-cpW"/>
+                <outlet property="processView" destination="c6j-bc-qLS" id="BR1-au-G1Y"/>
+                <outlet property="progress" destination="QsI-DS-yTX" id="FoR-85-jND"/>
+                <outlet property="progressWidth" destination="62I-1g-ldI" id="n3J-W0-Vl1"/>
+            </connections>
+            <point key="canvasLocation" x="-155" y="-13"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12106.1" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12074.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="XBMyJionPlanHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="339" height="36"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hjf-IY-nZf">
+                    <rect key="frame" x="15" y="5" width="274" height="26"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BIK-1u-FsK">
+                    <rect key="frame" x="304" y="3" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="clh-us-btH"/>
+                        <constraint firstAttribute="width" constant="30" id="yag-cD-IWU"/>
+                    </constraints>
+                    <state key="normal" image="carat"/>
+                    <state key="selected" image="carat-open"/>
+                    <connections>
+                        <action selector="action:" destination="iN0-l3-epB" eventType="touchUpInside" id="f88-Ea-diA"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="BIK-1u-FsK" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="M3u-28-Nls"/>
+                <constraint firstAttribute="trailing" secondItem="Hjf-IY-nZf" secondAttribute="trailing" constant="50" id="MsV-j3-Ryf"/>
+                <constraint firstAttribute="bottom" secondItem="Hjf-IY-nZf" secondAttribute="bottom" constant="5" id="TiY-QI-4cX"/>
+                <constraint firstItem="Hjf-IY-nZf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="cM6-78-fJI"/>
+                <constraint firstItem="Hjf-IY-nZf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="j4p-17-LBX"/>
+                <constraint firstAttribute="trailing" secondItem="BIK-1u-FsK" secondAttribute="trailing" constant="5" id="kPb-Je-coi"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="rightBt" destination="BIK-1u-FsK" id="v8W-na-XrC"/>
+                <outlet property="titleLab" destination="Hjf-IY-nZf" id="QXf-6g-r2z"/>
+            </connections>
+            <point key="canvasLocation" x="146.5" y="-10"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="carat" width="11" height="11"/>
+        <image name="carat-open" width="11" height="11"/>
+    </resources>
+</document>

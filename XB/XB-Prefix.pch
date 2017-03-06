@@ -1,0 +1,58 @@
+//
+//  XB-Prefix.pch
+//  XB
+//
+//  Created by 王化强 on 2017/2/10.
+//  Copyright © 2017年 whqfor. All rights reserved.
+//
+
+#ifndef XB_Prefix_pch
+#define XB_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "UIView+Extension.h"
+#import "UIColor+Category.h"
+//#import "EBaseTableViewCell.h"
+#import "UIImageView+WebCache.h"
+#import "SVProgressHUD.h"
+#import "Masonry.h"
+#import "YYModel.h"
+#import "MJRefresh.h"
+
+#import "ENetwork.h"
+#import "XBConst.h"
+#import "XBApi.h"
+#import "XBSandBox.h"
+#import "XBCommonTool.h"
+#import "XBBaseTableViewController.h"
+
+
+#import <GPUImage/GPUImage.h>
+#define screenWidth ([UIScreen mainScreen].bounds.size.width)
+#define screenHeight ([UIScreen mainScreen].bounds.size.height)
+#define CNP_SYSTEM_VERSION_LESS_THAN(v) ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
+#define CNP_IS_IPAD   (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+#define OEPathToMovie ([NSHomeDirectory() stringByAppendingPathComponent:@"Documents/Movie4.m4v"])
+
+#define textViewHeight 100
+#define pictureHW (screenWidth - 5*padding)/4
+#define MaxImageCount 9
+#define deleImageWH 25 // 删除按钮的宽高
+#define padding 10
+#define imageTag 2000
+#define IPCViewHeight 120
+
+
+
+
+
+
+#ifdef DEBUG
+#define ELog(...)  NSLog(__VA_ARGS__)
+#else
+#define ELog(...)
+#endif
+
+#endif /* XB_Prefix_pch */

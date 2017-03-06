@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12106.1" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12074.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="myLikeTipCell" rowHeight="71" id="KGk-i7-Jjw" customClass="XBMyLikeTipTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="345" height="71"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="345" height="70.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bfn-HF-rpg">
+                        <rect key="frame" x="274.5" y="5" width="60.5" height="60.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="bfn-HF-rpg" secondAttribute="height" multiplier="1:1" id="LLB-eX-xWT"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tom去沙滩" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4jv-0q-wz1">
+                        <rect key="frame" x="15" y="10" width="249.5" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="S9x-QJ-Duk"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这真实一本读起来让人开心的书，这真实一本读起来让人开心的书" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lzL-aO-ix6">
+                        <rect key="frame" x="15" y="31" width="249.5" height="24"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="bfn-HF-rpg" secondAttribute="trailing" constant="10" id="63t-72-GvU"/>
+                    <constraint firstItem="bfn-HF-rpg" firstAttribute="leading" secondItem="lzL-aO-ix6" secondAttribute="trailing" constant="10" id="6rQ-ih-VFi"/>
+                    <constraint firstItem="lzL-aO-ix6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="9mt-N2-9pa"/>
+                    <constraint firstItem="4jv-0q-wz1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="A05-VB-JfG"/>
+                    <constraint firstItem="bfn-HF-rpg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="TtP-4J-3If"/>
+                    <constraint firstItem="bfn-HF-rpg" firstAttribute="leading" secondItem="4jv-0q-wz1" secondAttribute="trailing" constant="10" id="VA7-zW-zOm"/>
+                    <constraint firstAttribute="bottom" secondItem="bfn-HF-rpg" secondAttribute="bottom" constant="5" id="c3I-1U-tif"/>
+                    <constraint firstItem="4jv-0q-wz1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="dSc-B5-5SH"/>
+                    <constraint firstItem="lzL-aO-ix6" firstAttribute="top" secondItem="4jv-0q-wz1" secondAttribute="bottom" id="hVJ-1S-gnm"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="desLab" destination="lzL-aO-ix6" id="70N-3g-Rho"/>
+                <outlet property="imgV" destination="bfn-HF-rpg" id="u5P-2g-8LF"/>
+                <outlet property="titleLab" destination="4jv-0q-wz1" id="78J-Xj-klG"/>
+            </connections>
+            <point key="canvasLocation" x="46.5" y="67.5"/>
+        </tableViewCell>
+    </objects>
+</document>

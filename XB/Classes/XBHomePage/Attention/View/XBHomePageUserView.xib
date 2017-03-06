@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12106.1" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12074.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="XBHomePageUserView">
+            <rect key="frame" x="0.0" y="0.0" width="359" height="257"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="沙克还没有留下任何脚印哦..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RSC-ep-jEL">
+                    <rect key="frame" x="20" y="30" width="319" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Igz-53-D1W"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="在好玩的计划里留下脚印，既能学到五花八门的带娃高招，又能形成沙克专属的成长记录，快去试试吧" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xa9-y4-rAp">
+                    <rect key="frame" x="20" y="85" width="319" height="31.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Asg-Rh-EqC">
+                    <rect key="frame" x="20" y="146.5" width="319" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="yJS-oe-ySQ"/>
+                    </constraints>
+                    <state key="normal" title="逛逛精选">
+                        <color key="titleColor" red="0.44705882349999998" green="0.78039215689999997" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="choiceAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="WEg-75-JUn"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pcd-oQ-ZNg">
+                    <rect key="frame" x="20" y="196.5" width="319" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="oMj-Fi-2EB"/>
+                    </constraints>
+                    <state key="normal" title="邀请亲友团">
+                        <color key="titleColor" red="0.44705882349999998" green="0.78039215689999997" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="inviteAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="avP-bz-8cb"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Asg-Rh-EqC" secondAttribute="trailing" constant="20" id="1gb-ih-iqm"/>
+                <constraint firstItem="Asg-Rh-EqC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="5BI-y6-TXg"/>
+                <constraint firstItem="xa9-y4-rAp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="Fi7-k0-Mbf"/>
+                <constraint firstItem="Pcd-oQ-ZNg" firstAttribute="top" secondItem="Asg-Rh-EqC" secondAttribute="bottom" constant="10" id="GSN-m7-pah"/>
+                <constraint firstItem="xa9-y4-rAp" firstAttribute="top" secondItem="RSC-ep-jEL" secondAttribute="bottom" constant="5" id="S4S-Hy-HWA"/>
+                <constraint firstAttribute="trailing" secondItem="RSC-ep-jEL" secondAttribute="trailing" constant="20" id="aqn-pw-JTN"/>
+                <constraint firstItem="Asg-Rh-EqC" firstAttribute="top" secondItem="xa9-y4-rAp" secondAttribute="bottom" constant="30" id="erf-Se-Bu8"/>
+                <constraint firstItem="RSC-ep-jEL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="o4P-fl-FAe"/>
+                <constraint firstAttribute="trailing" secondItem="Pcd-oQ-ZNg" secondAttribute="trailing" constant="20" id="o80-LH-ohh"/>
+                <constraint firstItem="RSC-ep-jEL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="30" id="ocM-1K-7fl"/>
+                <constraint firstAttribute="trailing" secondItem="xa9-y4-rAp" secondAttribute="trailing" constant="20" id="pIc-I5-XTw"/>
+                <constraint firstItem="Pcd-oQ-ZNg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="zG3-OC-J2h"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="choiceBt" destination="Asg-Rh-EqC" id="wCe-0Y-RCA"/>
+                <outlet property="inviteBt" destination="Pcd-oQ-ZNg" id="d8d-R5-JQk"/>
+                <outlet property="userLab" destination="RSC-ep-jEL" id="KKx-ug-Zjg"/>
+            </connections>
+            <point key="canvasLocation" x="39.5" y="-35.5"/>
+        </view>
+    </objects>
+</document>
