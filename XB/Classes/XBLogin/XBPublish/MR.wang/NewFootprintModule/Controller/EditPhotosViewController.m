@@ -226,6 +226,20 @@
     }
 }
 
+-(UIImage *)scaleToSize:(UIImage *)image size:(CGSize)size
+{
+    //创建一个bitmap的context
+    //并把他设置成当前的context
+    UIGraphicsBeginImageContext(size);
+    //绘制图片的大小
+    [image drawInRect:CGRectMake(0, 0, size.width, size.height)];
+    //从当前context中创建一个改变大小后的图片
+    UIImage *endImage=UIGraphicsGetImageFromCurrentImageContext();
+    
+    UIGraphicsEndImageContext();
+    return endImage;
+}
+
 //cutImage
 -(UIImage *) imageCompressForWidth:(UIImage *)sourceImage targetWidth:(CGFloat)defineWidth{
     
@@ -284,12 +298,12 @@
     return newImage;
 }
 
-- (void)cupImageWithIndex:(NSInteger)index {
+- (void)cupImageWithIndex:(NSInteger)index size:(CGSize)size{
     
     __weak typeof(self)weakSelf = self;
     
     weakSelf.imageArr[index] = weakSelf.imageArr[index];
-   weakSelf.imageArr[index] = [weakSelf imageCompressForWidth:weakSelf.imageArr[index] targetWidth:screenWidth - 70];
+    weakSelf.imageArr[index] = [weakSelf scaleToSize:weakSelf.imageArr[index] size:size];
     dispatch_async(dispatch_get_main_queue(), ^{
         [weakSelf.collectionView reloadData];
     });
@@ -309,19 +323,19 @@
             
             switch (row) {
                 case 0:
-                    [weakSelf cupImageWithIndex:weakSelf.assetIndex]; //比例没定，统一先裁剪一样的
+                    [weakSelf cupImageWithIndex:weakSelf.assetIndex size:CGSizeMake(400, 300)];
                     break;
                 case 1:
-                    [weakSelf cupImageWithIndex:weakSelf.assetIndex];
+                    [weakSelf cupImageWithIndex:weakSelf.assetIndex size:CGSizeMake(500, 400)];
+                    break;
+                case 2:
+                    [weakSelf cupImageWithIndex:weakSelf.assetIndex size:CGSizeMake(400, 400)];
                     break;
                 case 3:
-                    [weakSelf cupImageWithIndex:weakSelf.assetIndex];
+                    [weakSelf cupImageWithIndex:weakSelf.assetIndex size:CGSizeMake(400, 500)];
                     break;
                 case 4:
-                    [weakSelf cupImageWithIndex:weakSelf.assetIndex];
-                    break;
-                case 5:
-                    [weakSelf cupImageWithIndex:weakSelf.assetIndex];
+                    [weakSelf cupImageWithIndex:weakSelf.assetIndex size:CGSizeMake(300, 400)];
                     break;
                 default:
                     break;
